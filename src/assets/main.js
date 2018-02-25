@@ -8,7 +8,7 @@ $(function() {
          var button = $('<a href='+  elem.url+' target = blank ></a>').addClass('btn btn-primary').text("See Course"),
              title = $('<h3>'+  elem.title+ '</h3>'),
              image = $('<img>').attr('src', elem.badge),
-             course = ("<div></div>").addClass('course'),
+             course = $("<div></div>").addClass('course'),
              badge = course.append(title, image, button);
         $('#badges').append(course);
       });
